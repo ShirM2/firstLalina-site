@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Store</title>
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="/js/main.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="/">Home</a>
+            <% if (!user) { %>
+                <a href="/register">Register</a>
+                <a href="/login">Login</a>
+            <% } else { %>
+                <% if (user.role === 'supplier') { %>
+                    <a href="/products/new">Add Product</a>
+                <% } %>
+                <a href="/cart">Cart</a>
+                <a href="/logout">Logout</a>
+            <% } %>
+        </nav>
+    </header>
+    <main>
+        <%- content %>
+    </main>
+</body>
+</html>
