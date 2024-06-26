@@ -11,6 +11,14 @@ exports.createProduct = async (req, res) => {
     }
 };
 
+exports.sapir = async (req, res) => {
+    try {
+        res.render('sapir');
+    } catch (err) {
+        res.status(500).send(err);
+    }
+};
+
 exports.updateProduct = async (req, res) => {
     try {
         await Product.findByIdAndUpdate(req.params.id, req.body);
