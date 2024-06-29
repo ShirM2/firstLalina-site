@@ -1,0 +1,256 @@
+body {
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+header {
+    color: white;
+    padding: 1em;
+    text-align: center;
+    background-color: hsla(50, 55%, 61%, 0.77);
+    width: 100%;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    background-color: #f4f4f4;
+}
+
+main {
+    width: 100vw;
+    object-fit: fill;
+    position: relative;
+}
+
+img, svg {
+    vertical-align: middle;
+}
+
+.featured-products {
+    position: relative;
+    padding: 2em 0;
+    text-align: center;
+}
+
+.product-image {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.section1 {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: auto;
+   
+    margin-top: 50px;
+}
+
+.image-item {
+    width: 350px;
+    height: 400px;
+    overflow: hidden;
+    margin: 0 20px;
+    position: relative;
+    border-radius: 10px;
+}
+
+.image-item img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.image-item:hover img {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.contact {
+    width: 100%;
+    height: 300px;
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+    margin-top: 30px;
+    border: top 10px;;
+}
+
+.cream-types {
+    text-align: center;
+    margin-top: 30px;
+    background-color: hsla(50, 55%, 61%, 0.77);
+    padding: 20px;
+    overflow: hidden;
+}
+
+.cream-item {
+    display: inline-block;
+    margin: 10px;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.cream-item img {
+    display: block;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.cream-item:hover img {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+h1 {
+    font-family: 'Georgia', serif;
+    font-size: 30px;
+    color: hsl(210, 3%, 13%);
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 0px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    letter-spacing: 2px;
+}
+
+.slideshow-container {
+   
+    position: relative;
+    margin: auto;
+    overflow: hidden;
+    height: 550px;
+}
+
+.slides {
+    display: none;
+}
+
+.slides img {
+    width: 1530px;
+    height: 550px;
+    object-fit: cover;
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.dots {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 5px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+    background-color: #717171;
+}
+
+.contact {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 300px;
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+    margin-top: 30px;
+    padding: 20px;
+    box-sizing: border-box;
+    border:hsl(0, 0%, 6%);
+  
+    
+}
+
+.contact #map {
+    height: 100%;
+    width: 40%; /* רוחב המפה */
+    margin-right: 40px;
+    border-color: black;
+    border-radius: 5%;
+}
+
+.contact #final {
+    width: 50%; /* רוחב העמודה */
+    padding: 0 20px;
+}
+
+.flex-container {
+    display: flex;
+     /* מרווח שווה בין העמודות */
+    gap: 20px; /* רווח בין האלמנטים */
+}
+
+.column {
+    height: 200px; /* גובה גמיש */
+    padding: 20px; /* ריווח פנימי */
+    border: 1px solid #ccc; /* גבול */
+    text-align: justify;
+    background-color: hsla(50, 55%, 61%, 0.77);
+    border-radius: 7%;
+   
+}
+.links li a {
+    color: hsl(0, 0%, 5%); /* צבע חדש לקישורים */
+    text-decoration: none; /* להסיר קו קישור */
+}
+
+.links li a:hover {
+    text-decoration: underline; /* קו קישור בעת העברה */
+}
